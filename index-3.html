@@ -4,9 +4,616 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MVP Noodles & Fried Rice</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#111;
+color:#fff;
+}
+
+header{
+background:#000;
+padding:18px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:2px solid red;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:#ff2d2d;
+}
+
+.logo span{
+color:#fff;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#ff2d2d;
+}
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url('https://images.unsplash.com/photo-1512058564366-18510be2db19?w=1600');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:65px;
+color:#ff2d2d;
+}
+
+.hero h2{
+font-size:48px;
+margin-top:10px;
+}
+
+.hero p{
+font-size:20px;
+margin-top:20px;
+color:#ddd;
+}
+
+.delivery{
+margin-top:20px;
+font-size:22px;
+color:#ffcc00;
+font-weight:bold;
+}
+
+.btns{
+margin-top:35px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 28px;
+margin:10px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+color:#fff;
+}
+
+.zomato{
+background:#e23744;
+}
+
+.whatsapp{
+background:#25D366;
+}
+
+.call{
+background:#ff9800;
+}
+</style>
+
 </head>
+
 <body>
-<h1>MVP Noodles & Fried Rice</h1>
-<p>Welcome to MVP Noodles & Fried Rice.</p>
+
+<header>
+
+<div class="logo">
+MVP <span>Noodles & Fried Rice</span>
+</div>
+
+<nav>
+<a href="#noodles">Noodles</a>
+<a href="#friedrice">Fried Rice</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>MVP</h1>
+
+<h2>Noodles & Fried Rice</h2>
+
+<p>Fresh • Hot • Delicious Chinese Food</p>
+
+<div class="delivery">
+🚚 Home Delivery Within 15 KM
+</div>
+
+<div class="btns">
+
+<a href="#" class="btn zomato">Order on Zomato</a>
+
+<a href="https://wa.me/919059039262" class="btn whatsapp">
+WhatsApp Order
+</a>
+
+<a href="tel:9059039262" class="btn call">
+Call Now
+</a>
+
+</div>
+
+</div>
+
+</section><style>
+.section{
+padding:60px 20px;
+background:#111;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+color:#ff2d2d;
+margin-bottom:40px;
+}
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+max-width:1200px;
+margin:auto;
+}
+
+.card{
+background:#1b1b1b;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 0 10px rgba(255,0,0,.25);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:18px;
+}
+
+.card h3{
+font-size:24px;
+margin-bottom:10px;
+}
+
+.price{
+color:#ffcc00;
+font-size:22px;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.desc{
+color:#ccc;
+font-size:15px;
+line-height:24px;
+margin-bottom:18px;
+}
+
+.order-btn{
+display:inline-block;
+background:#25D366;
+color:#fff;
+padding:12px 20px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+</style>
+
+<section id="noodles" class="section">
+
+<h2 class="section-title">🍜 Noodles</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=800" alt="">
+<div class="card-content">
+<h3>Veg Noodles</h3>
+<div class="price">₹79</div>
+<p class="desc">Fresh vegetables tossed with delicious noodles.</p>
+<a class="order-btn" href="https://wa.me/919059039262">Order Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800" alt="">
+<div class="card-content">
+<h3>Gobi Noodles</h3>
+<div class="price">₹89</div>
+<p class="desc">Crispy gobi mixed with spicy noodles.</p>
+<a class="order-btn" href="https://wa.me/919059039262">Order Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800" alt="">
+<div class="card-content">
+<h3>Veg Schezwan Noodles</h3>
+<div class="price">₹109</div>
+<p class="desc">Spicy Schezwan noodles with vegetables.</p>
+<a class="order-btn" href="https://wa.me/919059039262">Order Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=800" alt="">
+<div class="card-content">
+<h3>Egg Noodles</h3>
+<div class="price">₹90</div>
+<p class="desc">Egg noodles cooked with fresh vegetables.</p>
+<a class="order-btn" href="https://wa.me/919059039262">Order Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800" alt="">
+<div class="card-content">
+<h3>Chicken Noodles</h3>
+<div class="price">₹120</div>
+<p class="desc">Tender chicken with delicious noodles.</p>
+<a class="order-btn" href="https://wa.me/919059039262">Order Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1555126634-323283e090fa?w=800" alt="">
+<div class="card-content">
+<h3>Schezwan Chicken Noodles</h3>
+<div class="price">₹129</div>
+<p class="desc">Hot & spicy Schezwan chicken noodles.</p>
+<a class="order-btn" href="https://wa.me/919059039262">Order Now</a>
+</div>
+</div>
+
+</div>
+
+</section><section id="friedrice" class="section">
+
+<h2 class="section-title">🍚 Fried Rice</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=800" alt="">
+<div class="card-content">
+<h3>Veg Fried Rice</h3>
+<div class="price">₹79</div>
+<p class="desc">Fresh vegetables tossed with aromatic fried rice.</p>
+<a class="order-btn" href="https://wa.me/919059039262">Order Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=800" alt="">
+<div class="card-content">
+<h3>Gobi Fried Rice</h3>
+<div class="price">₹89</div>
+<p class="desc">Crispy gobi mixed with delicious fried rice.</p>
+<a class="order-btn" href="https://wa.me/919059039262">Order Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800" alt="">
+<div class="card-content">
+<h3>Veg Schezwan Fried Rice</h3>
+<div class="price">₹109</div>
+<p class="desc">Spicy Schezwan fried rice with fresh vegetables.</p>
+<a class="order-btn" href="https://wa.me/919059039262">Order Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800" alt="">
+<div class="card-content">
+<h3>Egg Fried Rice</h3>
+<div class="price">₹90</div>
+<p class="desc">Fried rice prepared with fresh eggs and vegetables.</p>
+<a class="order-btn" href="https://wa.me/919059039262">Order Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604908176997-4317f3e3bcb5?w=800" alt="">
+<div class="card-content">
+<h3>Chicken Fried Rice</h3>
+<div class="price">₹120</div>
+<p class="desc">Juicy chicken pieces tossed with fried rice.</p>
+<a class="order-btn" href="https://wa.me/919059039262">Order Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1555126634-323283e090fa?w=800" alt="">
+<div class="card-content">
+<h3>Schezwan Chicken Fried Rice</h3>
+<div class="price">₹129</div>
+<p class="desc">Hot & spicy Schezwan chicken fried rice.</p>
+<a class="order-btn" href="https://wa.me/919059039262">Order Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800" alt="">
+<div class="card-content">
+<h3>Kaju Basmati Fried Rice</h3>
+<div class="price">₹140</div>
+<p class="desc">Premium basmati rice with roasted cashews.</p>
+<a class="order-btn" href="https://wa.me/919059039262">Order Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=800" alt="">
+<div class="card-content">
+<h3>MVP Special Schezwan Chicken Gobi Egg Fried Rice</h3>
+<div class="price">₹150</div>
+<p class="desc">Our signature special fried rice loaded with chicken, gobi and egg.</p>
+<a class="order-btn" href="https://wa.me/919059039262">Order Now</a>
+</div>
+</div>
+
+</div>
+
+</section><!-- ================= STARTERS ================= -->
+
+<section class="section">
+
+<h2 class="section-title">🥦 Starters</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=800" alt="Gobi Manchurian">
+
+<div class="card-content">
+<h3>Gobi Manchurian</h3>
+<div class="price">₹100</div>
+<p class="desc">
+Crispy gobi tossed in spicy Manchurian sauce.
+</p>
+
+<a class="order-btn"
+href="https://wa.me/919059039262">
+Order on WhatsApp
+</a>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SNACKS ================= -->
+
+<section class="section">
+
+<h2 class="section-title">🍗 Snacks</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=800" alt="Chicken Pakoda">
+
+<div class="card-content">
+
+<h3>Chicken Pakoda (100g)</h3>
+
+<div class="price">₹70</div>
+
+<p class="desc">
+Hot & Crispy Chicken Pakoda.
+</p>
+
+<a class="order-btn"
+href="https://wa.me/919059039262">
+Order on WhatsApp
+</a>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= EGG ================= -->
+
+<section class="section">
+
+<h2 class="section-title">🍳 Egg</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1510693206972-df098062cb71?w=800" alt="Omelette">
+
+<div class="card-content">
+
+<h3>Double Egg Omelette</h3>
+
+<div class="price">₹50</div>
+
+<p class="desc">
+Fresh double egg omelette with onion & masala.
+</p>
+
+<a class="order-btn"
+href="https://wa.me/919059039262">
+Order on WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="section">
+
+<h2 class="section-title">📞 Contact Us</h2>
+
+<div style="text-align:center;line-height:40px;font-size:20px;">
+
+<p>📍 Near Showroom Street, NR Chicken Kebab, Nellore</p>
+
+<p>📞 Call : <b>9059039262</b></p>
+
+<p>💬 WhatsApp : <b>9059039262</b></p>
+
+<p style="color:#ffcc00;font-size:24px;">
+🚚 Home Delivery Available Within <b>15 KM</b>
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= QR ================= -->
+
+<section class="section">
+
+<h2 class="section-title">📱 Scan & Pay</h2>
+
+<div style="text-align:center;">
+
+<p style="font-size:20px;margin-bottom:20px;">
+PhonePe / Google Pay / Paytm Accepted
+</p>
+
+<p style="color:#25D366;font-size:22px;">
+(Your PhonePe QR Image will be added in Part 5)
+</p>
+
+</div>
+
+</section><!-- ================= MAP ================= -->
+
+<section class="section">
+
+<h2 class="section-title">📍 Find Us</h2>
+
+<div style="text-align:center;">
+
+<a class="btn call"
+href="https://maps.google.com"
+target="_blank">
+
+Open Google Maps
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ================= ORDER ================= -->
+
+<section class="section">
+
+<h2 class="section-title">🍽️ Order Now</h2>
+
+<div style="text-align:center;">
+
+<a class="btn zomato"
+href="#">
+
+Order on Zomato
+
+</a>
+
+<a class="btn call"
+href="#">
+
+Order on Swiggy
+
+</a>
+
+<a class="btn whatsapp"
+href="https://wa.me/919059039262">
+
+WhatsApp Order
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer style="background:#000;padding:40px;text-align:center;">
+
+<h2 style="color:#ff2d2d;">
+MVP Noodles & Fried Rice
+</h2>
+
+<p style="margin-top:15px;">
+Fresh • Hot • Delicious
+</p>
+
+<p style="margin-top:10px;">
+📞 9059039262
+</p>
+
+<p>
+💬 WhatsApp : 9059039262
+</p>
+
+<p>
+🚚 Home Delivery Available Within 15 KM
+</p>
+
+<p style="margin-top:20px;color:#aaa;">
+© 2026 MVP Noodles & Fried Rice.
+All Rights Reserved.
+</p>
+
+</footer>
+
 </body>
+
 </html>
